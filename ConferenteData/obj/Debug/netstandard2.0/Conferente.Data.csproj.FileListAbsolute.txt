@@ -1,0 +1,12 @@
+D:\De la ore\Conference\Conference\ConferenteData\bin\Debug\netstandard2.0\Conferente.Data.deps.json
+D:\De la ore\Conference\Conference\ConferenteData\bin\Debug\netstandard2.0\Conferente.Data.dll
+D:\De la ore\Conference\Conference\ConferenteData\bin\Debug\netstandard2.0\Conferente.Data.pdb
+D:\De la ore\Conference\Conference\ConferenteData\bin\Debug\netstandard2.0\Conference.Domain.dll
+D:\De la ore\Conference\Conference\ConferenteData\bin\Debug\netstandard2.0\Conference.Domain.pdb
+D:\De la ore\Conference\Conference\ConferenteData\obj\Debug\netstandard2.0\Conferente.Data.csprojAssemblyReference.cache
+D:\De la ore\Conference\Conference\ConferenteData\obj\Debug\netstandard2.0\Conferente.Data.csproj.CoreCompileInputs.cache
+D:\De la ore\Conference\Conference\ConferenteData\obj\Debug\netstandard2.0\Conferente.Data.AssemblyInfoInputs.cache
+D:\De la ore\Conference\Conference\ConferenteData\obj\Debug\netstandard2.0\Conferente.Data.AssemblyInfo.cs
+D:\De la ore\Conference\Conference\ConferenteData\obj\Debug\netstandard2.0\Conferente.Data.csproj.CopyComplete
+D:\De la ore\Conference\Conference\ConferenteData\obj\Debug\netstandard2.0\Conferente.Data.dll
+D:\De la ore\Conference\Conference\ConferenteData\obj\Debug\netstandard2.0\Conferente.Data.pdb
