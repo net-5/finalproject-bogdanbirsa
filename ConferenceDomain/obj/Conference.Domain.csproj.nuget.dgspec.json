@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\De la ore\\Conference\\Conference\\ConferenceDomain\\Conference.Domain.csproj": {}
+    "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj": {}
   },
   "projects": {
-    "D:\\De la ore\\Conference\\Conference\\ConferenceDomain\\Conference.Domain.csproj": {
+    "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\De la ore\\Conference\\Conference\\ConferenceDomain\\Conference.Domain.csproj",
+        "projectUniqueName": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj",
         "projectName": "Conference.Domain",
-        "projectPath": "D:\\De la ore\\Conference\\Conference\\ConferenceDomain\\Conference.Domain.csproj",
+        "projectPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj",
         "packagesPath": "C:\\Users\\COND-LAPTOP\\.nuget\\packages\\",
-        "outputPath": "D:\\De la ore\\Conference\\Conference\\ConferenceDomain\\obj\\",
+        "outputPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

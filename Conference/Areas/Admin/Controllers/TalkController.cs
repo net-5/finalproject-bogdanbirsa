@@ -32,7 +32,7 @@ namespace Conference.Areas.Admin.Controllers
         public ActionResult Details(int id)
         {
             var getTalkById = talk.GetById(id);
-            SpeakerViewModel model = new SpeakerViewModel();
+            TalkViewModel model = new TalkViewModel();
             model.InjectFrom(getTalkById);
             return View(model);
         }
