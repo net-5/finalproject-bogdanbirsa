@@ -13099,11 +13099,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\De la ore\\Conference\\Conference\\Conference\\Conference.csproj",
+      "projectUniqueName": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\Conference\\Conference.csproj",
       "projectName": "Conference",
-      "projectPath": "D:\\De la ore\\Conference\\Conference\\Conference\\Conference.csproj",
+      "projectPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\Conference\\Conference.csproj",
       "packagesPath": "C:\\Users\\COND-LAPTOP\\.nuget\\packages\\",
-      "outputPath": "D:\\De la ore\\Conference\\Conference\\Conference\\obj\\",
+      "outputPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\Conference\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13122,11 +13122,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\De la ore\\Conference\\Conference\\ConferenceDomain\\Conference.Domain.csproj": {
-              "projectPath": "D:\\De la ore\\Conference\\Conference\\ConferenceDomain\\Conference.Domain.csproj"
+            "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj": {
+              "projectPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj"
             },
-            "D:\\De la ore\\Conference\\Conference\\ConferenceService\\Conference.Service.csproj": {
-              "projectPath": "D:\\De la ore\\Conference\\Conference\\ConferenceService\\Conference.Service.csproj"
+            "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceService\\Conference.Service.csproj": {
+              "projectPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceService\\Conference.Service.csproj"
             }
           }
         }

@@ -103,17 +103,11 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, EditionViewModel model)
         {
-
             Editions deleteEdition = new Editions();
-
             deleteEdition = edition.GetById(id);
-
             model.InjectFrom(deleteEdition);
-
             edition.DeleteEdition(deleteEdition);
-
             return RedirectToAction(nameof(Index));
-
         }
     }
 }
