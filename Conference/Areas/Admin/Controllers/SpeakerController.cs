@@ -21,7 +21,7 @@ namespace Conference.Areas.Admin.Controllers
         {
             this.speaker = speaker;
         }
-        // GET: Edition
+        // GET: Speaker
         public ActionResult Index()
         {
             var getSpeakers = speaker.GetSpeakers();
@@ -40,7 +40,8 @@ namespace Conference.Areas.Admin.Controllers
         // GET: Speakers/Create
         public ActionResult Create()
         {
-            return View();
+            SpeakerViewModel model = new SpeakerViewModel();
+            return View(model);
         }
 
         // POST: Speakers/Create
@@ -48,22 +49,24 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(SpeakerViewModel model)
         {
-            if (ModelState.IsValid)
             {
-
-                Speakers newSpeaker = new Speakers();
-                newSpeaker.InjectFrom(model);
-
-                var createSpeaker = speaker.CreateSpeaker(newSpeaker);
-                if (createSpeaker == null)
+                if (ModelState.IsValid)
                 {
-                    ModelState.AddModelError("CompanyName", "Must be unique");
-                    return View(model);
-                }
-            }
-            return RedirectToAction(nameof(Index));
-        }
+                    Speakers speakersToAdd = new Speakers();
+                    speakersToAdd.InjectFrom(model);
 
+                    var addedSpeakers = speaker.CreateSpeaker(speakersToAdd);
+                    if (addedSpeakers == null)
+                    {
+                        ModelState.AddModelError("Description", "Desciption must be unique");
+                        return View(model);
+                    }
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(model);
+
+            }
+        }
         // GET: Speakers/Edit/5
         public ActionResult Edit(int id)
         {
@@ -73,7 +76,6 @@ namespace Conference.Areas.Admin.Controllers
 
             return View(model);
         }
-
 
         // POST: Speakers/Edit/5
         [HttpPost]

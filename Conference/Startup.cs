@@ -34,10 +34,25 @@ namespace Conference
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-           services.AddDbContext<ConferenceContext>();
+            services.AddDbContext<ConferenceContext>();
 
             services.AddTransient<IEditionsRepository, EditionsRepository>();
             services.AddTransient<IEditionsService, EditionsService>();
+
+            services.AddTransient<ISpeakerRepository, SpeakerRepository>();
+            services.AddTransient<ISpeakerService, SpeakerService>();
+
+            services.AddTransient<ISponsorsRepository, SponsorsRepository>();
+            services.AddTransient<ISponsorsService, SponsorsService>();
+
+            services.AddTransient<ISponsorTypesRepository, SponsorTypesRepository>();
+            services.AddTransient<ISponsorTypesService, SponsorTypesService>();
+
+            services.AddTransient<ITalksRepository, TalksRepository>();
+            services.AddTransient<ITalksService, TalksService>();
+
+            services.AddTransient<IWorkshopsRepository, WorkshopsRepository>();
+            services.AddTransient<IWorkshopsService, WorkshopsService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -73,7 +88,7 @@ namespace Conference
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-           
+
 
         }
     }

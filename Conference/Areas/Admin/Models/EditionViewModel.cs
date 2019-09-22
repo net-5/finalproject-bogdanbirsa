@@ -12,7 +12,7 @@ namespace Conference.Areas.Admin.Models
         public string Name { get; set; }
         public string TagLine { get; set; }
         [Required]
-        [Range (2015,2019)]
+        [Range (1986,2019)]
         public int Year { get; set; }
         public bool Active { get; set; }
 

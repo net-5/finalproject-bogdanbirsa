@@ -48,22 +48,24 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(WorkshopViewModel model)
         {
-            if (ModelState.IsValid)
             {
-
-                Workshops newWorkshop = new Workshops();
-                newWorkshop.InjectFrom(model);
-
-                var createWorkshop = workshop.CreateWorkshops(newWorkshop);
-                if (createWorkshop == null)
+                if (ModelState.IsValid)
                 {
-                    ModelState.AddModelError("CompanyName", "Must be unique");
-                    return View(model);
-                }
-            }
-            return RedirectToAction(nameof(Index));
-        }
+                    Workshops workshopsToAdd = new Workshops();
+                    workshopsToAdd.InjectFrom(model);
 
+                    var addedWorkshops = workshop.CreateWorkshops(workshopsToAdd);
+                    if (addedWorkshops == null)
+                    {
+                        ModelState.AddModelError("Description", "Desciption must be unique");
+                        return View(model);
+                    }
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(model);
+
+            }
+        }
         // GET: Workshops/Edit/5
         public ActionResult Edit(int id)
         {

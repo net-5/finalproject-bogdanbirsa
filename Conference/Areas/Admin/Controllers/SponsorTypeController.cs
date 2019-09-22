@@ -60,8 +60,9 @@ namespace Conference.Areas.Admin.Controllers
                     ModelState.AddModelError("CompanyName", "Must be unique");
                     return View(model);
                 }
+                return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Index));
+            return View(model);
         }
 
         // GET: SponsorTypes/Edit/5

@@ -37,10 +37,11 @@ namespace Conference.Areas.Admin.Controllers
             return View(model);
         }
 
-        // GET: Talk/Create
+        // GET: Sponsor/Create
         public ActionResult Create()
         {
-            return View();
+            SponsorViewModel model = new SponsorViewModel();
+            return View(model);
         }
 
         // POST: Sponsor/Create
@@ -60,8 +61,9 @@ namespace Conference.Areas.Admin.Controllers
                     ModelState.AddModelError("CompanyName", "Must be unique");
                     return View(model);
                 }
+                return RedirectToAction(nameof(Index));
             }
-            return RedirectToAction(nameof(Index));
+            return View(model);
         }
 
         // GET: Sponsors/Edit/5

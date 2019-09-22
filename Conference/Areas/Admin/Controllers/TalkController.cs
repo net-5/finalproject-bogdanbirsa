@@ -48,20 +48,23 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(TalkViewModel model)
         {
-            if (ModelState.IsValid)
             {
-
-                Talks newTalk = new Talks();
-                newTalk.InjectFrom(model);
-
-                var createTalk = talk.CreateTalk(newTalk);
-                if (createTalk == null)
+                if (ModelState.IsValid)
                 {
-                    ModelState.AddModelError("CompanyName", "Must be unique");
-                    return View(model);
+
+                    Talks talksToAdd = new Talks();
+                    talksToAdd.InjectFrom(model);
+
+                    var addedTalks = talk.CreateTalk(talksToAdd);
+                    if (addedTalks == null)
+                    {
+                        ModelState.AddModelError("CompanyName", "Must be unique");
+                        return View(model);
+                    }
+                    return RedirectToAction(nameof(Index));
                 }
+                return View(model);
             }
-            return RedirectToAction(nameof(Index));
         }
 
         // GET: Talks/Edit/5
