@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Conference</title>
 
+    <link rel="stylesheet" type="text/css" href="~/css/Index.css" />
+
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     </environment>
@@ -13,32 +15,54 @@
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
               crossorigin="anonymous"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"/>
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
     </environment>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Index.css" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-default bg-mv">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Conference</a>
+                <a class="navbar-brand active" href="/">
+                    <img class="img-responsive" src="~/Image/dotnetdays.jpg" alt="dotnetdays.ro" style="width:9rem; background-color: #442359;" />
+                </a>
+
+                <a class="navbar-brand" asp-area="" asp-controller="Edition" asp-action="Index">Edition</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Speaker" asp-action="Index">Speaker</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Sponsor" asp-action="Index">Sponsor</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Talk" asp-action="Index">Talk</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Workshop" asp-action="Index">Workshop</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="menu-socials">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a href="https://www.facebook.com/dotnetdays.ro" target="_blank">
+                                <img src="~/image/facebook.png" alt="facebook" width="35" />
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a href="https://twitter.com/dotnetdaysro" target="_blank">
+                                <img src="~/Image/twitter.png" alt="twitter" width="35" />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://meetup.com/NET-User-Group-Iasi/" target="_blank">
+                                <img src="~/image/meetup.png" alt="meetup" width="35" />
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
@@ -46,11 +70,81 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019 - Conference - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <div class="heading-block">
+        <div class="text-center">
+
+            <div class="align-text-bottom text-center" style="  height: 10em; width: 100%; background-image: url('../wwwroot/Image/conf 1.png');
+                                                background-repeat: no-repeat;background-size:cover;background-attachment:fixed;position:relative">
+                <div style="position:absolute;top:30%;left:35%">
+                    <img src="~/image/dotnetdays.png" style="width:20em;" />
+                    <h1 class="card-title display-4 font-weight-bolder">2019</h1>
+                    <p class="card-text" style="text-decoration-color:black">1 Decembrie 2019 | Pleiada Boutique Hotel & Spa, Iasi, Romania</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="about col-xs-12 col-md-4">
+                    <ul>
+                        <li>
+                            <a href="mailto:info@dotnetdays.ro">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="https://dotnetdays.ro/Privacy">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="https://dotnetdays.ro/CoC">Cod of Conduct</a>
+                        </li>
+                        <li>
+                            <a href="https://dotnetdays.ro/CoC">Terms & Consitions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="current-edition col-xs-12 col-md-4">
+                    <ul>
+                        <li>
+                            <a href="https://dotnetdays.ro/About">About</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@dotnetdays.ro">Become a Sponsor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socials col-xs-12 col-md-4">
+                    <h4>Socials</h4>
+                    <ul class="socials-nav" align-right>
+                        <li class="social">
+                            <a href="http://facebook.com/dotnetdays.ro" target="_blank">
+                                <img src="~/Image/facebook.png" width="30" />
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="https://twitter.com/dotnetdays.ro" target="_blank">
+                                <img src="~/Image/twitter.png" width="30" />
+                            </a>
+                        </li>
+                        <li class="social">
+                            <a href="https://meetup.com/NET-User-Group-Iasi/" target="_blank">
+                                <img src="~/image/meetup.png" width="30" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-right col-xs-12">&copy; 2019 - DotNetIasi</div>
+            </div>
         </div>
     </footer>
+    <div>
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -71,6 +165,11 @@
         </script>
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+                                //$(document).ready(function () {
+                                //    initializeClock('days', deadline);
+                                //});
+    </script>
 
     @RenderSection("Scripts", required: false)
 </body>

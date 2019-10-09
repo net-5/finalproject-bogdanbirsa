@@ -38,8 +38,8 @@ namespace Conference.TagHelpers
                 {
                     TagRenderMode = TagRenderMode.Normal
                 };
-                myOption.Attributes.Add("value", speaker.FullName);
-                myOption.InnerHtml.Append(speaker.FullName);
+                myOption.Attributes.Add("value", speaker.Id.ToString());
+                myOption.InnerHtml.Append(speaker.Id.ToString());
                 output.Content.AppendHtml(myOption);
             }
         }

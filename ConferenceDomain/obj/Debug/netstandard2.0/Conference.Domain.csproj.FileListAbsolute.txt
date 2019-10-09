@@ -16,3 +16,11 @@ D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\nets
 D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfo.cs
 D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.dll
 D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.pdb
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\bin\Debug\netstandard2.0\Conference.Domain.deps.json
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\bin\Debug\netstandard2.0\Conference.Domain.dll
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\bin\Debug\netstandard2.0\Conference.Domain.pdb
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.csprojAssemblyReference.cache
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfoInputs.cache
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.AssemblyInfo.cs
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.dll
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceDomain\obj\Debug\netstandard2.0\Conference.Domain.pdb

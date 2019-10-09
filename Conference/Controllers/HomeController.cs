@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Conference.Models;
 
-namespace Conference.Areas.Controllers
+namespace Conference.Controllers
 {
     public class HomeController : Controller
     {

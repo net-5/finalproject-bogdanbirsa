@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 
-namespace Conference.Areas.Controllers
+namespace Conference.Controllers
 {
-    [Area("Admin")]
     public class TalkController : Controller
     {
 
@@ -32,7 +31,7 @@ namespace Conference.Areas.Controllers
         public ActionResult Details(int id)
         {
             var getTalkById = talk.GetById(id);
-            TalkViewModel model = new TalkViewModel();
+            TalksViewModel model = new TalksViewModel();
             model.InjectFrom(getTalkById);
             return View(model);
         }
@@ -42,11 +41,11 @@ namespace Conference.Areas.Controllers
         {
             return View();
         }
-
+        /*
         // POST: Talk/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(TalkViewModel model)
+        public ActionResult Create(TalksViewModel model)
         {
             {
                 if (ModelState.IsValid)
@@ -71,7 +70,7 @@ namespace Conference.Areas.Controllers
         public ActionResult Edit(int id)
         {
             var edit = talk.GetById(id);
-            TalkViewModel model = new TalkViewModel();
+            TalksViewModel model = new TalksViewModel();
             model.InjectFrom(edit);
 
             return View(model);
@@ -81,7 +80,7 @@ namespace Conference.Areas.Controllers
         // POST: Talks/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, TalkViewModel model)
+        public ActionResult Edit(int id, TalksViewModel model)
         {
             Talks edit = new Talks();
             edit.InjectFrom(model);
@@ -94,7 +93,7 @@ namespace Conference.Areas.Controllers
         {
             var delete = talk.GetById(id);
 
-            TalkViewModel model = new TalkViewModel();
+            TalksViewModel model = new TalksViewModel();
 
             model.InjectFrom(delete);
 
@@ -104,7 +103,7 @@ namespace Conference.Areas.Controllers
         // POST: Talks/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, TalkViewModel model)
+        public ActionResult Delete(int id, TalksViewModel model)
         {
 
             Talks deleteTalk = new Talks();
@@ -118,5 +117,6 @@ namespace Conference.Areas.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+        */
     }
 }

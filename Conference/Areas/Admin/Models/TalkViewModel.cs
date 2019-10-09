@@ -9,6 +9,7 @@ namespace Conference.Areas.Admin.Models
     public class TalkViewModel
     {
         public int Id { get; set; }
+        public int SpeakerId { get; set; }
         public string Name { get; set; }
         public string TagLine { get; set; }
         [Required]

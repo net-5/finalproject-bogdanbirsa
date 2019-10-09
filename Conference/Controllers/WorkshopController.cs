@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 
-namespace Conference.Areas.Controllers
+namespace Conference.Controllers
 {
-    [Area("Admin")]
     public class WorkshopController : Controller
     {
 
@@ -32,11 +31,11 @@ namespace Conference.Areas.Controllers
         public ActionResult Details(int id)
         {
             var getWorkshopById = workshop.GetById(id);
-            WorkshopViewModel model = new WorkshopViewModel();
+            WorkshopsViewModel model = new WorkshopsViewModel();
             model.InjectFrom(getWorkshopById);
             return View(model);
         }
-
+        /*
         // GET: Workshop/Create
         public ActionResult Create()
         {
@@ -46,7 +45,7 @@ namespace Conference.Areas.Controllers
         // POST: Workshop/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(WorkshopViewModel model)
+        public ActionResult Create(WorkshopsViewModel model)
         {
             {
                 if (ModelState.IsValid)
@@ -70,7 +69,7 @@ namespace Conference.Areas.Controllers
         public ActionResult Edit(int id)
         {
             var edit = workshop.GetById(id);
-            WorkshopViewModel model = new WorkshopViewModel();
+            WorkshopsViewModel model = new WorkshopsViewModel();
             model.InjectFrom(edit);
 
             return View(model);
@@ -80,7 +79,7 @@ namespace Conference.Areas.Controllers
         // POST: Workshops/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, WorkshopViewModel model)
+        public ActionResult Edit(int id, WorkshopsViewModel model)
         {
             Workshops edit = new Workshops();
             edit.InjectFrom(model);
@@ -93,7 +92,7 @@ namespace Conference.Areas.Controllers
         {
             var delete = workshop.GetById(id);
 
-            WorkshopViewModel model = new WorkshopViewModel();
+            WorkshopsViewModel model = new WorkshopsViewModel();
 
             model.InjectFrom(delete);
 
@@ -103,7 +102,7 @@ namespace Conference.Areas.Controllers
         // POST: Workshops/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, WorkshopViewModel model)
+        public ActionResult Delete(int id, WorkshopsViewModel model)
         {
 
             Workshops deleteWorkshop = new Workshops();
@@ -117,5 +116,6 @@ namespace Conference.Areas.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+        */
     }
 }

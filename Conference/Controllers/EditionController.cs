@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 
-namespace Conference.Areas.Controllers
+namespace Conference.Controllers
 {
-    [Area("Admin")]
     public class EditionController : Controller
     {
 
@@ -32,11 +31,11 @@ namespace Conference.Areas.Controllers
         public ActionResult Details(int id)
         {
             var getEditionById = edition.GetById(id);
-            EditionViewModel model = new EditionViewModel();
+            EditionsViewModel model = new EditionsViewModel();
             model.InjectFrom(getEditionById);
             return View(model);
         }
-
+        /*
         // GET: Edition/Create
         public ActionResult Create()
         {
@@ -46,7 +45,7 @@ namespace Conference.Areas.Controllers
         // POST: Edition/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(EditionViewModel model)
+        public ActionResult Create(EditionsViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +67,7 @@ namespace Conference.Areas.Controllers
         public ActionResult Edit(int id)
         {
             var edit = edition.GetById(id);
-            EditionViewModel model = new EditionViewModel();
+            EditionsViewModel model = new EditionsViewModel();
             model.InjectFrom(edit);
 
             return View(model);
@@ -78,7 +77,7 @@ namespace Conference.Areas.Controllers
         // POST: Editions/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, EditionViewModel model)
+        public ActionResult Edit(int id, EditionsViewModel model)
         {
             Editions edit = new Editions();
             edit.InjectFrom(model);
@@ -91,7 +90,7 @@ namespace Conference.Areas.Controllers
         {
             var delete = edition.GetById(id);
 
-            EditionViewModel model = new EditionViewModel();
+            EditionsViewModel model = new EditionsViewModel();
 
             model.InjectFrom(delete);
 
@@ -101,7 +100,7 @@ namespace Conference.Areas.Controllers
         // POST: Editions/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, EditionViewModel model)
+        public ActionResult Delete(int id, EditionsViewModel model)
         {
 
             Editions deleteEdition = new Editions();
@@ -115,5 +114,6 @@ namespace Conference.Areas.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+        */
     }
 }

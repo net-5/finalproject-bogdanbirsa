@@ -3220,11 +3220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj",
+      "projectUniqueName": "D:\\proiect final dotnet\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj",
       "projectName": "Conference.Domain",
-      "projectPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj",
+      "projectPath": "D:\\proiect final dotnet\\finalproject-bogdanbirsa\\ConferenceDomain\\Conference.Domain.csproj",
       "packagesPath": "C:\\Users\\COND-LAPTOP\\.nuget\\packages\\",
-      "outputPath": "D:\\De la ore\\Conference\\finalproject-bogdanbirsa\\ConferenceDomain\\obj\\",
+      "outputPath": "D:\\proiect final dotnet\\finalproject-bogdanbirsa\\ConferenceDomain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3276,10 +3276,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

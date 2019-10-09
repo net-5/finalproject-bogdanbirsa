@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 
-namespace Conference.Areas.Controllers
+namespace Conference.Controllers
 {
-    [Area("Admin")]
     public class SpeakerController : Controller
     {
 
@@ -32,22 +31,22 @@ namespace Conference.Areas.Controllers
         public ActionResult Details(int id)
         {
             var getSpeakerById = speaker.GetById(id);
-            SpeakerViewModel model = new SpeakerViewModel();
+            SpeakersViewModel model = new SpeakersViewModel();
             model.InjectFrom(getSpeakerById);
             return View(model);
         }
-
+        /*
         // GET: Speakers/Create
         public ActionResult Create()
         {
-            SpeakerViewModel model = new SpeakerViewModel();
+            SpeakersViewModel model = new SpeakersViewModel();
             return View(model);
         }
 
         // POST: Speakers/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(SpeakerViewModel model)
+        public ActionResult Create(SpeakersViewModel model)
         {
             {
                 if (ModelState.IsValid)
@@ -71,7 +70,7 @@ namespace Conference.Areas.Controllers
         public ActionResult Edit(int id)
         {
             var edit = speaker.GetById(id);
-            SpeakerViewModel model = new SpeakerViewModel();
+            SpeakersViewModel model = new SpeakersViewModel();
             model.InjectFrom(edit);
 
             return View(model);
@@ -80,7 +79,7 @@ namespace Conference.Areas.Controllers
         // POST: Speakers/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, SpeakerViewModel model)
+        public ActionResult Edit(int id, SpeakersViewModel model)
         {
             Speakers edit = new Speakers();
             edit.InjectFrom(model);
@@ -93,7 +92,7 @@ namespace Conference.Areas.Controllers
         {
             var delete = speaker.GetById(id);
 
-            SpeakerViewModel model = new SpeakerViewModel();
+            SpeakersViewModel model = new SpeakersViewModel();
 
             model.InjectFrom(delete);
 
@@ -103,7 +102,7 @@ namespace Conference.Areas.Controllers
         // POST: Speakers/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, SpeakerViewModel model)
+        public ActionResult Delete(int id, SpeakersViewModel model)
         {
             Speakers deleteSpeaker = new Speakers();
             deleteSpeaker = speaker.GetById(id);
@@ -111,5 +110,6 @@ namespace Conference.Areas.Controllers
             speaker.DeleteSpeakers(deleteSpeaker);
             return RedirectToAction(nameof(Index));
         }
+        */
     }
 }

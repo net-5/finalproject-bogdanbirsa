@@ -26,3 +26,16 @@ D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceService\obj\Debug\net
 D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.csproj.CopyComplete
 D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.dll
 D:\De la ore\Conference\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.pdb
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\bin\Debug\netstandard2.0\Conference.Service.deps.json
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\bin\Debug\netstandard2.0\Conference.Service.dll
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\bin\Debug\netstandard2.0\Conference.Service.pdb
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\bin\Debug\netstandard2.0\Conference.Domain.dll
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\bin\Debug\netstandard2.0\Conferente.Data.dll
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\bin\Debug\netstandard2.0\Conference.Domain.pdb
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\bin\Debug\netstandard2.0\Conferente.Data.pdb
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.csprojAssemblyReference.cache
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.AssemblyInfoInputs.cache
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.AssemblyInfo.cs
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.csproj.CopyComplete
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.dll
+D:\proiect final dotnet\finalproject-bogdanbirsa\ConferenceService\obj\Debug\netstandard2.0\Conference.Service.pdb

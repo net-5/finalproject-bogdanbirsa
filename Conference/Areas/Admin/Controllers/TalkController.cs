@@ -48,7 +48,6 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(TalkViewModel model)
         {
-            {
                 if (ModelState.IsValid)
                 {
 
@@ -64,7 +63,6 @@ namespace Conference.Areas.Admin.Controllers
                     return RedirectToAction(nameof(Index));
                 }
                 return View(model);
-            }
         }
 
         // GET: Talks/Edit/5

@@ -49,7 +49,7 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(SpeakerViewModel model)
         {
-            {
+            
                 if (ModelState.IsValid)
                 {
                     Speakers speakersToAdd = new Speakers();
@@ -65,7 +65,7 @@ namespace Conference.Areas.Admin.Controllers
                 }
                 return View(model);
 
-            }
+            
         }
         // GET: Speakers/Edit/5
         public ActionResult Edit(int id)

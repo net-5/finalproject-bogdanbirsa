@@ -10,12 +10,12 @@ namespace Conference.Areas.Admin.Models
     public class WorkshopViewModel
     {
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
         public string Description { get; set; }
         public string Prerequisites { get; set; }
         public string Requirements { get; set; }
         public int? PlacesAvailable { get; set; }
-        [Required]
         public string Edition { get; set; }
         public int SpeakerId { get; set; }
         public string RegistrationLink { get; set; }

@@ -48,7 +48,6 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(WorkshopViewModel model)
         {
-            {
                 if (ModelState.IsValid)
                 {
                     Workshops workshopsToAdd = new Workshops();
@@ -63,8 +62,6 @@ namespace Conference.Areas.Admin.Controllers
                     return RedirectToAction(nameof(Index));
                 }
                 return View(model);
-
-            }
         }
         // GET: Workshops/Edit/5
         public ActionResult Edit(int id)
@@ -82,10 +79,16 @@ namespace Conference.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, WorkshopViewModel model)
         {
-            Workshops edit = new Workshops();
-            edit.InjectFrom(model);
-            var createNewWorkshop = workshop.Update(edit);
-            return RedirectToAction(nameof(Index));
+            if (ModelState.IsValid)
+            {
+                Workshops workshopsToUpdate = new Workshops();
+                workshopsToUpdate.InjectFrom(model);
+
+                var updateWorkshops = workshop.Update(workshopsToUpdate);
+                
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model);
         }
 
         // GET: Workshops/Delete/5

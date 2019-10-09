@@ -10,9 +10,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Omu.ValueInjecter;
 
-namespace Conference.Areas.Controllers
+namespace Conference.Controllers
 {
-    [Area("Admin")]
     public class SponsorTypeController : Controller
     {
 
@@ -32,11 +31,11 @@ namespace Conference.Areas.Controllers
         public ActionResult Details(int id)
         {
             var getSponsorTypeById = sponsorType.GetById(id);
-            SponsorTypeViewModel model = new SponsorTypeViewModel();
+            SponsorsTypeViewModel model = new SponsorsTypeViewModel();
             model.InjectFrom(getSponsorTypeById);
             return View(model);
         }
-
+        /*
         // GET: SponsorType/Create
         public ActionResult Create()
         {
@@ -46,7 +45,7 @@ namespace Conference.Areas.Controllers
         // POST: SponsorType/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(SponsorTypeViewModel model)
+        public ActionResult Create(SponsorsTypeViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -69,7 +68,7 @@ namespace Conference.Areas.Controllers
         public ActionResult Edit(int id)
         {
             var edit = sponsorType.GetById(id);
-            SponsorTypeViewModel model = new SponsorTypeViewModel();
+            SponsorsTypeViewModel model = new SponsorsTypeViewModel();
             model.InjectFrom(edit);
 
             return View(model);
@@ -79,7 +78,7 @@ namespace Conference.Areas.Controllers
         // POST: SponsorTypes/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, SponsorTypeViewModel model)
+        public ActionResult Edit(int id, SponsorsTypeViewModel model)
         {
             SponsorTypes edit = new SponsorTypes();
             edit.InjectFrom(model);
@@ -92,7 +91,7 @@ namespace Conference.Areas.Controllers
         {
             var delete = sponsorType.GetById(id);
 
-            SponsorTypeViewModel model = new SponsorTypeViewModel();
+            SponsorsTypeViewModel model = new SponsorsTypeViewModel();
 
             model.InjectFrom(delete);
 
@@ -102,7 +101,7 @@ namespace Conference.Areas.Controllers
         // POST: SponsorTypes/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, SponsorTypeViewModel model)
+        public ActionResult Delete(int id, SponsorsTypeViewModel model)
         {
 
             SponsorTypes deleteSponsorType = new SponsorTypes();
@@ -116,5 +115,6 @@ namespace Conference.Areas.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+        */
     }
 }
